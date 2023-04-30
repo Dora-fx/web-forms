@@ -1,5 +1,6 @@
-.wrapper{
-    padding: 78px 100px;
+body {
+    font-weight: 400;
+    font-family: "Roboto";
 }
 
 h1 {
@@ -10,11 +11,161 @@ h1 {
     font-family: "Roboto Slab";
     text-align: center;
 }
+
 h2 {
+    margin-bottom: 40px;
     font-size: 20px;
     letter-spacing: 0px;
     text-transform: uppercase;
     color: #b3b3b3;
     font-weight: 700;
+}
+
+form {
+    margin-bottom: 50px;
+}
+
+input,
+select,
+textarea {
+    box-sizing: border-box;
+    outline: none;
+}
+
+select {
+    appearance: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+hr {
+    margin-bottom: 50px;
+}
+
+.wrapper {
+    padding: 78px 100px;
+}
+
+.simple-form {
+    max-width: 330px;
+}
+
+.simple-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.text-input {
+    padding: 12px 17px;
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #cccccc;
     font-family: "Roboto";
+}
+
+.select-arrow {
+    display: block;
+    position: relative;
+}
+
+.select-arrow::before {
+    content: '';
+    position: absolute;
+    top: 18px;
+    right: 22px;
+    border: 7px solid transparent;
+    border-top-color: #000;
+    z-index: 0;
+}
+
+.select-arrow select {
+    position: relative;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.submit {
+    padding: 14px 0;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    background-color: #12d661;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto";
+    text-align: center;
+}
+
+.elements {
+    display: flex;
+}
+
+.radio-style {
+    display: none;
+}
+
+.radio-style+label {
+    position: relative;
+    padding: 0 25px;
+}
+
+.radio-style+label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #cccccc;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.radio-style:checked+label::before {
+    border: 2px solid #3e6aff;
+}
+
+.radio-style:checked+label::after {
+    content: '';
+    position: absolute;
+    left: 3px;
+    top: 5px;
+    height: 9px;
+    width: 9px;
+    background-color: #3e6aff;
+    border-radius: 50%;
+}
+
+.radio-style:disabled+label {
+    color: #b3b3b3;
+}
+
+.radio-style:disabled+label::before {
+    border: 2px solid #cccccc;
+    background-color: #f7f7f7;
+}
+
+.table-element {
+    padding: 13px 20px;
+    border-radius: 3px;
+    background-color: #f7f7f7;
+    border: 1px solid #e5e5e5;
+}
+
+.table-element td {
+    padding: 7px 0;
+}
+
+.status-data {
+    width: 78px;
+    font-size: 14px;
+    color: #b3b3b3;
+    font-weight: 700;
+}
+
+.input-data {
+width: auto;
 }

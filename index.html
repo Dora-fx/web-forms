@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,28 +9,84 @@
     <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <div class="wrapper">
         <h1>Форми</h1>
         <h2>01. проста форма</h2>
-        <form action="" method="">
-            <label><input type="text"></label>
-            <label><input type="email"></label>
-            <select name="" id="">
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-            </select>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-            <label><input type="submit"></label>
+        <form action="php.php" method="post" class="simple-form">
+            <label><input type="text" placeholder="Введіть ім’я" class="text-input"></label>
+            <label><input type="email" placeholder="Email" class="text-input"></label>
+            <label class="select-arrow">
+                <select name="" id="" class="text-input">
+                    <option value="" selected>Ваше місто</option>
+                    <option value="">Хмельницький</option>
+                    <option value="">Львів</option>
+                    <option value="">Одеса</option>
+                </select>
+            </label>
+            <label><textarea name="" id="" cols="" rows="10" placeholder="Email" class="text-input"></textarea></label>
+            <label><input type="submit" value="Зареєструватися" class="submit"></label>
         </form>
         <hr>
+        <h2>02. елементи</h2>
+        <form action="php.php" method="post" class="elements">
+            <div class="radio">
+                <p>
+                    <input type="radio" id="newPost" name="delivery" class="radio-style" checked>
+                    <label for="newPost">Нова Пошта</label>
+                </p>
+                <p>
+                    <input type="radio" id="courier" name="delivery" class="radio-style">
+                    <label for="courier">Кур’єр</label>
+                </p>
+                <p>
+                    <input type="radio" id="self-viviz" name="delivery" class="radio-style" disabled>
+                    <label for="self-viviz">Самовивіз</label>
+                </p>
+            </div>
+            <div class="checkbox">
+                <p>
+                    <input type="checkbox">
+                    <label for="">Прочитав умови договору</label>
+                </p>
+                <p>
+                    <input type="checkbox">
+                    <label for="">Згідний з ПДВ 9%</label>
+                </p>
+                <p>
+                    <input type="checkbox" disabled>
+                    <label for="">Отримувати новини на ел. пошту</label>
+                </p>
+            </div>
+            <div class="table-element">
+                <table>
+                    <tr>
+                        <td class="status-data">Статус</td>
+                        <td>
+                            <input type="checkbox" id="">
+                            <label for="">Новинки</label>
+                            <input type="checkbox">
+                            <label for="">Акційні товари</label>
+                            <input type="checkbox">
+                            <label for="">Розпродаж</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="status-data">Дата</td>
+                        <td>
+                            <label for=""><input type="date" class="text-input input-data"></label>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+
+        </form>
     </div>
 </body>
+
 </html>
