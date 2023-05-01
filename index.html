@@ -50,16 +50,16 @@
             </div>
             <div class="checkbox">
                 <p>
-                    <input type="checkbox">
-                    <label for="">Прочитав умови договору</label>
+                    <input type="checkbox" id="acceptTerms" class="checbox-style">
+                    <label for="acceptTerms">Прочитав умови договору</label>
                 </p>
                 <p>
-                    <input type="checkbox">
-                    <label for="">Згідний з ПДВ 9%</label>
+                    <input type="checkbox" id="agreeWithVat" class="checbox-style">
+                    <label for="agreeWithVat">Згідний з ПДВ 9%</label>
                 </p>
                 <p>
-                    <input type="checkbox" disabled>
-                    <label for="">Отримувати новини на ел. пошту</label>
+                    <input type="checkbox" id="getNews" class="checbox-style" disabled>
+                    <label for="getNews">Отримувати новини на ел. пошту</label>
                 </p>
             </div>
             <div class="table-element">
@@ -67,12 +67,12 @@
                     <tr>
                         <td class="status-data">Статус</td>
                         <td>
-                            <input type="checkbox" id="">
-                            <label for="">Новинки</label>
-                            <input type="checkbox">
-                            <label for="">Акційні товари</label>
-                            <input type="checkbox">
-                            <label for="">Розпродаж</label>
+                            <input type="checkbox" id="new" class="checbox-style">
+                            <label for="new">Новинки</label>
+                            <input type="checkbox" id="shares" class="checbox-style">
+                            <label for="shares">Акційні товари</label>
+                            <input type="checkbox" id="sale" class="checbox-style">
+                            <label for="sale">Розпродаж</label>
                         </td>
                     </tr>
                     <tr>
@@ -84,7 +84,34 @@
                 </table>
 
             </div>
-
+        </form>
+        <hr>
+        <h2>03. стилізовані чекбокси </h2>
+        <form action="php.php" method="post" class="stylized-checkbox">
+            <div class="gender">
+                <p>
+                    <input type="radio" id="men" name="gender" class="gender-men radio-img">
+                    <label for="men">Чоловік</label>
+                </p>
+                <p>
+                    <input type="radio" id="women" name="gender" class="gender-women radio-img">
+                    <label for="women">Жінка</label>
+                </p>
+            </div>
+            <div class="reminders">
+                <p>
+                    <input type="checkbox" id="checkNews" class="switch">
+                    <label for="checkNews">Отримувати новини</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="bueSausage" class="switch">
+                    <label for="bueSausage">Купити додому ковбаси</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="lightOn" class="switch">
+                    <label for="lightOn">Включити світло</label>
+                </p>
+            </div>
         </form>
     </div>
 </body>
