@@ -134,7 +134,7 @@
                     <tr>
                         <td>Пароль:</td>
                         <td>
-                            <input id="tablePass" type="password" placeholder="Введіть не менше 6 символів"
+                            <input id="tablePass" type="password" minlength="6" placeholder="Введіть не менше 6 символів"
                                 class="text-input">
                             <label for="tablePass"></label>
                         </td>
@@ -164,7 +164,7 @@
                         <td>Фото:</td>
                         <td>
                             <input type="file" id="tablePhoto" class="table-file">
-                            <label for="tablePhoto">Виберіть файл</label>
+                            <label for="tablePhoto" class="file-hover">Виберіть файл</label>
                         </td>
                     </tr>
                     <tr>
@@ -196,7 +196,7 @@
                             <td><label for="email">Ел. пошта</label></td>
                             <td><label for="tel">Телефон</label></td>
                         </tr>
-                        <tr>
+                        <tr class="input-row">
                             <td><input type="text" id="nameSurname" class="text-input"></td>
                             <td><input type="email" id="email" class="text-input"></td>
                             <td><input type="text" id="tel" class="text-input"></td>
@@ -204,13 +204,13 @@
                     </table>
                 </div>
                 <hr>
-                <div class="table-wrapper">
+                <div class="table-wrapper mb10">
                     <table>
                         <tr>
                             <td><label for="country">Країна</label></td>
-                            <td>Адреса</td>
+                            <td><label for="adress">Адреса</label></td>
                         </tr>
-                        <tr>
+                        <tr class="input-row">
                             <td>
                                 <label class="select-arrow">
                                     <select class="text-input" id="country">
@@ -219,14 +219,14 @@
                                     </select>
                                 </label>
                             </td>
-                            <td colspan="2"><label for=""><input type="text" class="text-input"></label></td>
+                            <td colspan="2"><input type="text" id="adress" class="text-input"></td>
                         </tr>
                         <tr>
                             <td><label for="city">Місто</label></td>
                             <td><label for="house">Будинок</label></td>
                             <td><label for="post">Поштовий індекс</label></td>
                         </tr>
-                        <tr>
+                        <tr class="input-row">
                             <td><input type="text" id="city" class="text-input"></td>
                             <td><input type="text" id="house" class="text-input"></td>
                             <td><input type="text" id="post" class="text-input"></td>
@@ -250,13 +250,16 @@
                     <p><label for="login">Логін</label></p>
                     <input type="text" id="login" class="text-input">
                     <p><label for="pass">Пароль</label></p>
-                    <input type="password" id="pass" class="text-input">
-                    <a href="#">Забули пароль?</a>
-                    <input type="checkbox" id="remindPass" class="checbox-style">
-                    <label for="remindPass">Запам’ятати пароль</label>
+                    <div class="visible-pass">
+                        <input type="password" id="pass" class="text-input">
+                        <label for="seePass"><input type="checkbox" id="seePass" class="see-pass"></label>
+                    </div>
+                    <a href="#" class="forgot-password">Забули пароль?</a>
+                    <input type="checkbox" id="remindPass" class="checbox-style container-checbox">
+                    <label for="remindPass" class="mb10">Запам’ятати пароль</label>
                     <label for="enter"><input type="submit" id="enter" value="Увійти" class="submit"></label>
                 </form>
-                <button id="closeBtn">+</button>
+                <button id="closeBtn" class="container-cross">+</button>
             </div>
         </section>
     </div>

@@ -96,8 +96,8 @@ max-width: 990px;
     content: '';
     position: absolute;
     top: 18px;
-    right: 22px;
-    border: 7px solid transparent;
+    right: 14px;
+    border: 5px solid transparent;
     border-top-color: #000;
     z-index: 0;
 }
@@ -351,8 +351,26 @@ max-width: 990px;
     top: 2px;
 }
 
+
+
+.table-form td:first-child {
+    width: 40%;
+    padding: 13px 0;
+    vertical-align: top;
+}
+
+.table-form td:last-child {
+    padding: 7px 0;
+}
+
 .table-file {
     display: none;
+}
+
+.file-hover:hover {
+    box-shadow: 0px 2px 2.5px rgba(15,40,126,0.35);
+    background-color: #2857f4;
+    cursor: pointer;
 }
 
 .table-file+label {
@@ -380,8 +398,28 @@ max-width: 990px;
     padding: 2px 4px;
 }
 
+.table-wrapper label {
+    font-size: 13px;
+    color: #b3b3b3;
+}
+
+
+
+.application-form hr {
+    margin: 25px 0;
+}
+
 .table-wrapper {
     margin: 0 -4px;
+}
+
+.input-row td {
+    padding-bottom: 15px;
+}
+
+.mb10 {
+    display: block;
+    margin-bottom: 10px;
 }
 
 .buttons {
@@ -415,6 +453,7 @@ max-width: 990px;
 }
 
 .container {
+    position: relative;
     padding: 25px 23px 20px;
     max-width: 310px;
     width: 100%;
@@ -423,3 +462,49 @@ max-width: 990px;
     background-color: #fafafa;
     border: 1px solid #e6e6e6;
 }
+
+.container p {
+    margin-bottom: 9px;
+    font-size: 13px;
+    color: #b3b3b3;
+}
+
+.forgot-password {
+    padding: 12px 0;
+    font-size: 13px;
+    color: #3e6aff;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    font-size: 13px;
+    text-decoration: underline;
+    color: #3e6aff;
+    cursor: pointer;
+}
+
+.container-checbox {
+    padding: 14px 0;
+}
+
+.container-cross {
+    position: absolute;
+    top: 12px;
+    right: 11px;
+    font-size: 25px;
+    color: #b3b3b3;  
+    border: none;
+    background-color: transparent;
+    transform: rotate(45deg);
+}
+
+.visible-pass {
+    position: relative;
+}
+
+.see-pass {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+}
+
